@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 /*import Aos from "aos";
 import "aos/dist/aos.css";*/
 
@@ -9,8 +9,8 @@ import "../assets/css/pages/Home.css";
 
 
 //components
-import SimpleMap from "../components/containers/SimpleMap";
-//import FullMap from "../components/containers/FullMap";
+//import SimpleMap from "../components/containers/SimpleMap";
+import FullMap from "../components/containers/FullMap";
 
 class Home extends Component{
     constructor(props){
@@ -65,8 +65,10 @@ class Home extends Component{
        const {data, darkMode} = this.state;
     
         return(
+            <Fragment>
                 <div className={darkMode? "ctr-home dark-mode-ctr-home":"ctr-home"}>
-                    {
+                <FullMap countries={data} darkMode={darkMode}/>
+                    {/*
                         data.map((pais,index)=>{
                             return (
                                     <SimpleMap
@@ -78,9 +80,11 @@ class Home extends Component{
                                 
                             )
                         })
-                    }
+                    */}
                     
                 </div>
+                
+            </Fragment>
         );
     }
 }
