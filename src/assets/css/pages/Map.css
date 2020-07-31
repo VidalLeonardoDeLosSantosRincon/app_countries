@@ -1,0 +1,25 @@
+.ctr-map{
+    height:auto;
+    width:100%;
+    padding:0;
+    box-sizing:border-box;
+    background:white;
+
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.dark-mode-ctr-map{
+    height:auto;
+    width:100%;
+    padding:0;
+    box-sizing:border-box;
+    background:black;
+
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}

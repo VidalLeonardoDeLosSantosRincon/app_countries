@@ -1,7 +1,35 @@
+*{
+  padding:0;
+  margin:0;
+}
 .App {
-  text-align: center;
+  width:100%;
+  box-sizing:border-box;
 }
 
+.btn-float{
+  height:100px;
+  width:100px;
+  background:transparent;
+  border-radius:100%;
+  position:fixed;
+  margin:20% 0 0 10px;
+  z-index:1000;
+
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.btn-float img{
+  width:60px;
+  height:60px;
+  border-radius:50px;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  cursor:pointer;
+}
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +63,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/

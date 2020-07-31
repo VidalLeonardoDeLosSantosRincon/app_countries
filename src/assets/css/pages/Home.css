@@ -1,0 +1,25 @@
+.ctr-home{
+    height:auto;
+    width:100%;
+    padding:0;
+    box-sizing:border-box;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+
+}
+
+.dark-mode-ctr-home{
+    height:auto;
+    background:rgba(0,0,0,0.9);
+    width:100%;
+    padding:0;
+    box-sizing:border-box;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+}
